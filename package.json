@@ -1,0 +1,23 @@
+{
+  "name": "uvix-task2-dashboard",
+  "version": "1.0.0",
+  "description": "Intern performance dashboard — daily/weekly/monthly trends (Chart.js) plus a linear-regression trend score and k-means performance tiers, built from the Intern Daily Report sheet.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "convert-excel": "node scripts/convertExcelToJson.js",
+    "export-excel": "node scripts/exportJsonToExcel.js"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "chart.js": "^4.4.4",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "a6d0fbee-c27c-41e6-8d1d-e8af0b35405b",
+    "date": "2026-08-25",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 9.6,
+    "hoursWorked": 6.9,
+    "pendingTask": ""
+  },
+  {
+    "id": "280f5716-eec5-4d4f-b6be-af7f23df57bb",
+    "date": "2026-08-25",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 7.6,
+    "hoursWorked": 6.3,
+    "pendingTask": ""
+  },
+  {
+    "id": "67a50001-40a5-4117-bf6f-2fd7328407fa",
+    "date": "2026-08-25",
+    "employeeName": "Priya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 6,
+    "qualityScore": 8.7,
+    "hoursWorked": 5.4,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "8ffa3101-9780-4e7b-8b58-b48101dffaf7",
+    "date": "2026-08-25",
+    "employeeName": "Karthik",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 5,
+    "hoursWorked": 8.4,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "6bfc1fda-2a3d-47e6-abdc-e57a4855d8f1",
+    "date": "2026-08-25",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.8,
+    "hoursWorked": 5.3,
+    "pendingTask": ""
+  },
+  {
+    "id": "f4af508b-69dc-42e7-93f7-2d817b8d747a",
+    "date": "2026-08-26",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 6,
+    "qualityScore": 9.6,
+    "hoursWorked": 6.7,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "313ca2fd-3aee-4fcb-8e13-3a696a09e2b7",
+    "date": "2026-08-26",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.7,
+    "hoursWorked": 7.1,
+    "pendingTask": ""
+  },
+  {
+    "id": "a1628ba8-824e-46ef-8813-f039809fa941",
+    "date": "2026-08-26",
+    "employeeName": "Priya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 5,
+    "qualityScore": 7.8,
+    "hoursWorked": 5.5,
+    "pendingTask": ""
+  },
+  {
+    "id": "70974e40-ec0c-4061-943b-9a8d6582788e",
+    "date": "2026-08-26",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 4.9,
+    "hoursWorked": 7.3,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "548ea14c-9d32-4c1f-8d28-99c3f732754c",
+    "date": "2026-08-26",
+    "employeeName": "Anu",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 8.1,
+    "hoursWorked": 6.9,
+    "pendingTask": ""
+  },
+  {
+    "id": "5f88bc83-cea8-4ff6-83d6-f81950b1d95b",
+    "date": "2026-08-27",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 9.3,
+    "hoursWorked": 7.7,
+    "pendingTask": ""
+  },
+  {
+    "id": "66481848-57ba-4aa7-afce-8b64e67d174e",
+    "date": "2026-08-27",
+    "employeeName": "Ravi",
+    "tasksAssigned": 6,
+    "tasksCompleted": 4,
+    "qualityScore": 7.4,
+    "hoursWorked": 6.8,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "40aeaa82-00e7-41b2-a0a3-f8e247313c91",
+    "date": "2026-08-27",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 5,
+    "qualityScore": 9,
+    "hoursWorked": 5.6,
+    "pendingTask": ""
+  },
+  {
+    "id": "314ae007-c264-4fa8-add9-0a928f206f57",
+    "date": "2026-08-27",
+    "employeeName": "Karthik",
+    "tasksAssigned": 6,
+    "tasksCompleted": 2,
+    "qualityScore": 4.9,
+    "hoursWorked": 8.1,
+    "pendingTask": ""
+  },
+  {
+    "id": "0c60d567-4e30-4d0a-8c0f-a2f4a0285d62",
+    "date": "2026-08-27",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.8,
+    "hoursWorked": 7.1,
+    "pendingTask": ""
+  },
+  {
+    "id": "15642fa8-2040-4334-a38d-3c1424e69132",
+    "date": "2026-08-28",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 5,
+    "qualityScore": 9.2,
+    "hoursWorked": 6.2,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "42102963-5d90-4809-a89f-27b313a4d561",
+    "date": "2026-08-28",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.7,
+    "hoursWorked": 5.3,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "f7b8e60b-d89e-4df0-b56d-f340ead3e7fc",
+    "date": "2026-08-28",
+    "employeeName": "Priya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 8.2,
+    "hoursWorked": 8,
+    "pendingTask": ""
+  },
+  {
+    "id": "28de3a3a-efb5-4132-a312-38aa9755fc6f",
+    "date": "2026-08-28",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 6.2,
+    "hoursWorked": 7.7,
+    "pendingTask": ""
+  },
+  {
+    "id": "cec34470-a03d-41d2-b49f-3ee61901baad",
+    "date": "2026-08-28",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.7,
+    "hoursWorked": 6.6,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "80330c12-5360-4309-be4c-9d79caa55482",
+    "date": "2026-08-31",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 9.6,
+    "hoursWorked": 7.4,
+    "pendingTask": ""
+  },
+  {
+    "id": "5c90d5a4-311e-436f-9463-ef990cc95e7d",
+    "date": "2026-08-31",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 6.4,
+    "hoursWorked": 6.6,
+    "pendingTask": ""
+  },
+  {
+    "id": "e36644e8-456c-45c3-945b-0f5af867dda2",
+    "date": "2026-08-31",
+    "employeeName": "Priya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 5,
+    "qualityScore": 8.8,
+    "hoursWorked": 8.4,
+    "pendingTask": ""
+  },
+  {
+    "id": "99a93480-8133-4ed0-9165-02ea601d8991",
+    "date": "2026-08-31",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 5.5,
+    "hoursWorked": 7.6,
+    "pendingTask": ""
+  },
+  {
+    "id": "62a8eee2-808e-42e3-aa49-90f99115c8bc",
+    "date": "2026-08-31",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 8.4,
+    "hoursWorked": 7.1,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "f5d48201-570c-4fa9-a9da-3254d61d41e9",
+    "date": "2026-09-01",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 9.6,
+    "hoursWorked": 8.5,
+    "pendingTask": ""
+  },
+  {
+    "id": "71fa8fb8-566c-4a6e-a44a-250bb41cce4f",
+    "date": "2026-09-01",
+    "employeeName": "Ravi",
+    "tasksAssigned": 6,
+    "tasksCompleted": 5,
+    "qualityScore": 7.4,
+    "hoursWorked": 7.6,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "addc61ed-ae1b-4401-9eb8-c9856282274e",
+    "date": "2026-09-01",
+    "employeeName": "Priya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 5,
+    "qualityScore": 8.4,
+    "hoursWorked": 7.6,
+    "pendingTask": ""
+  },
+  {
+    "id": "aaa11f73-8967-4211-b779-1ace8f01d871",
+    "date": "2026-09-01",
+    "employeeName": "Karthik",
+    "tasksAssigned": 3,
+    "tasksCompleted": 1,
+    "qualityScore": 5,
+    "hoursWorked": 8.3,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "264ddf5a-fbbc-4617-9db3-8fc0907de041",
+    "date": "2026-09-01",
+    "employeeName": "Anu",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 8.6,
+    "hoursWorked": 6.9,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "53596ed9-b625-4f32-a7c9-6acf5de21cb1",
+    "date": "2026-09-02",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 6,
+    "qualityScore": 9.9,
+    "hoursWorked": 7.1,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "619e4b7b-256c-43fc-a570-59e3790cbfc2",
+    "date": "2026-09-02",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.2,
+    "hoursWorked": 5.7,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "ed9c26e4-818b-4cdc-b427-bbb38cc45393",
+    "date": "2026-09-02",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.9,
+    "hoursWorked": 7.8,
+    "pendingTask": ""
+  },
+  {
+    "id": "c3d22a2f-9bf3-40da-8259-65268aec31ee",
+    "date": "2026-09-02",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 5,
+    "hoursWorked": 5.6,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "8684092c-e4b7-4bfe-81f7-a22c33601944",
+    "date": "2026-09-02",
+    "employeeName": "Anu",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.9,
+    "hoursWorked": 7.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "948760a9-dc9b-4f1b-b770-b07f15e8f46b",
+    "date": "2026-09-03",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 9.6,
+    "hoursWorked": 7.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "b73ea026-7c1a-4b22-a5f1-654ccf9d0213",
+    "date": "2026-09-03",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.1,
+    "hoursWorked": 8.4,
+    "pendingTask": ""
+  },
+  {
+    "id": "1ce2c29d-3522-4192-af60-b49344e5b92a",
+    "date": "2026-09-03",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.6,
+    "hoursWorked": 7.7,
+    "pendingTask": ""
+  },
+  {
+    "id": "bff8d3f9-ef4b-48d4-8817-10ab00db1667",
+    "date": "2026-09-03",
+    "employeeName": "Karthik",
+    "tasksAssigned": 3,
+    "tasksCompleted": 1,
+    "qualityScore": 5.3,
+    "hoursWorked": 7.8,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "25970e33-28d1-4d4d-9b62-d864624e1862",
+    "date": "2026-09-03",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 8.7,
+    "hoursWorked": 7.9,
+    "pendingTask": ""
+  },
+  {
+    "id": "05816149-d4d5-45b6-b977-6e13e076c94d",
+    "date": "2026-09-04",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 9.6,
+    "hoursWorked": 6.3,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "c5360e6d-b664-43a4-886b-7f315604f6b7",
+    "date": "2026-09-04",
+    "employeeName": "Ravi",
+    "tasksAssigned": 6,
+    "tasksCompleted": 4,
+    "qualityScore": 6.8,
+    "hoursWorked": 7.4,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "5115a500-7907-4f7f-a533-1505d05b11e3",
+    "date": "2026-09-04",
+    "employeeName": "Priya",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 7.9,
+    "hoursWorked": 5.8,
+    "pendingTask": ""
+  },
+  {
+    "id": "16890746-4001-4001-b950-6bc36f92a89f",
+    "date": "2026-09-04",
+    "employeeName": "Karthik",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.1,
+    "hoursWorked": 6,
+    "pendingTask": ""
+  },
+  {
+    "id": "928580a6-0a00-4afd-b5dd-9dc279652710",
+    "date": "2026-09-04",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.7,
+    "hoursWorked": 5.5,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "7a061123-0f14-4be2-81fa-c8e1f5608f14",
+    "date": "2026-09-07",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 6,
+    "qualityScore": 10,
+    "hoursWorked": 7.9,
+    "pendingTask": ""
+  },
+  {
+    "id": "a21289f7-81b3-485d-9f69-223b408a78c6",
+    "date": "2026-09-07",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 6.9,
+    "hoursWorked": 7.8,
+    "pendingTask": ""
+  },
+  {
+    "id": "f3c633b3-287b-48f9-8391-1f1bccfd3104",
+    "date": "2026-09-07",
+    "employeeName": "Priya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 5,
+    "qualityScore": 7.4,
+    "hoursWorked": 8,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "aea94f54-a343-413a-b3ec-c9a22072ad1d",
+    "date": "2026-09-07",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 6.4,
+    "hoursWorked": 6,
+    "pendingTask": ""
+  },
+  {
+    "id": "963df384-634e-4a2c-a060-3206ef7dcc42",
+    "date": "2026-09-07",
+    "employeeName": "Anu",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.8,
+    "hoursWorked": 8,
+    "pendingTask": ""
+  },
+  {
+    "id": "11c34b48-6985-49f6-9ae4-0dff0c7048ba",
+    "date": "2026-09-08",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 10,
+    "hoursWorked": 7.8,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "86028331-1da5-4b62-9c40-1c47b720e858",
+    "date": "2026-09-08",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 6.8,
+    "hoursWorked": 6.7,
+    "pendingTask": ""
+  },
+  {
+    "id": "f79e76f6-6297-41f5-a863-2eb57ba7651a",
+    "date": "2026-09-08",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.7,
+    "hoursWorked": 8,
+    "pendingTask": ""
+  },
+  {
+    "id": "2ed5ff7a-5062-478f-9242-d0518b992c06",
+    "date": "2026-09-08",
+    "employeeName": "Karthik",
+    "tasksAssigned": 6,
+    "tasksCompleted": 3,
+    "qualityScore": 6,
+    "hoursWorked": 6.5,
+    "pendingTask": ""
+  },
+  {
+    "id": "8907c4b1-b7bf-4549-b038-0ea5cd4c1e82",
+    "date": "2026-09-08",
+    "employeeName": "Anu",
+    "tasksAssigned": 6,
+    "tasksCompleted": 4,
+    "qualityScore": 8.1,
+    "hoursWorked": 5.4,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "c6ee0bbf-2b9d-44da-bd12-cfb3be8ff7a6",
+    "date": "2026-09-09",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 10,
+    "hoursWorked": 8,
+    "pendingTask": ""
+  },
+  {
+    "id": "a1bef057-4912-410f-851d-a6e6eb71700c",
+    "date": "2026-09-09",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 6.4,
+    "hoursWorked": 7.6,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "192b2f4f-158d-4523-9b31-59472662795b",
+    "date": "2026-09-09",
+    "employeeName": "Priya",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 8,
+    "hoursWorked": 8.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "d534a596-d291-4d57-8634-3c4c68cd38b9",
+    "date": "2026-09-09",
+    "employeeName": "Karthik",
+    "tasksAssigned": 6,
+    "tasksCompleted": 4,
+    "qualityScore": 6.2,
+    "hoursWorked": 7.1,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "da228caf-4a2b-4305-b50d-d67c75be499e",
+    "date": "2026-09-09",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 8.2,
+    "hoursWorked": 8.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "749bbf78-440e-4eda-8c3f-5e7e4d7352b5",
+    "date": "2026-09-10",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 10,
+    "hoursWorked": 6,
+    "pendingTask": ""
+  },
+  {
+    "id": "d77ea64e-b6b6-475f-9782-aa5b26ba2757",
+    "date": "2026-09-10",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.2,
+    "hoursWorked": 6.9,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "fdfca42c-6e21-44ef-b813-1ec2856a8540",
+    "date": "2026-09-10",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 7.4,
+    "hoursWorked": 5.7,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "39caf161-ec55-4a2a-b6aa-a70300199e87",
+    "date": "2026-09-10",
+    "employeeName": "Karthik",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.1,
+    "hoursWorked": 7,
+    "pendingTask": ""
+  },
+  {
+    "id": "51595753-6c76-425b-b5c3-8217afb3adbf",
+    "date": "2026-09-10",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.6,
+    "hoursWorked": 6.3,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "5f9170a3-558a-4d2a-9924-eeed354d5f95",
+    "date": "2026-09-11",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 5,
+    "qualityScore": 10,
+    "hoursWorked": 6.2,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "e32c73c0-a144-4af0-8275-422ea07d31c4",
+    "date": "2026-09-11",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 6.3,
+    "hoursWorked": 6,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "c41e4cfa-9c80-4323-adde-fbb1726f047b",
+    "date": "2026-09-11",
+    "employeeName": "Priya",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 7.8,
+    "hoursWorked": 6,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "ec8e07f6-611b-4b79-a8d1-fa3bf6b4fbfd",
+    "date": "2026-09-11",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 6.4,
+    "hoursWorked": 6.2,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "7aeb12fc-acd8-47d0-ba39-fe829f3d266e",
+    "date": "2026-09-11",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 8.4,
+    "hoursWorked": 6.2,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "811f2dfc-26bf-4b76-bf52-bc434b154342",
+    "date": "2026-09-14",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 5,
+    "qualityScore": 10,
+    "hoursWorked": 6.5,
+    "pendingTask": ""
+  },
+  {
+    "id": "6b19ff40-1afc-4c37-be52-488fc7b5d421",
+    "date": "2026-09-14",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 6.7,
+    "hoursWorked": 5.6,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "f3762677-c867-485e-bc5d-f3d8ab65db89",
+    "date": "2026-09-14",
+    "employeeName": "Priya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 5,
+    "qualityScore": 8.2,
+    "hoursWorked": 8.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "f8f2fc3d-1d59-43c6-87c2-e8e399c5f8f9",
+    "date": "2026-09-14",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 5.5,
+    "hoursWorked": 8,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "b2f683b6-6108-431f-9b57-1f38c49ba980",
+    "date": "2026-09-14",
+    "employeeName": "Anu",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 8.9,
+    "hoursWorked": 5,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "3c09c412-784b-41e8-9b00-d40e629e3953",
+    "date": "2026-09-15",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 6,
+    "qualityScore": 10,
+    "hoursWorked": 6.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "1dc634c2-bec9-43b9-9f43-f47b93ed7ea8",
+    "date": "2026-09-15",
+    "employeeName": "Ravi",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 6.9,
+    "hoursWorked": 5.6,
+    "pendingTask": ""
+  },
+  {
+    "id": "12b8a9bb-cb93-46fd-a958-f554880b25fa",
+    "date": "2026-09-15",
+    "employeeName": "Priya",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 7.7,
+    "hoursWorked": 6.9,
+    "pendingTask": ""
+  },
+  {
+    "id": "00d45df3-656c-4ea1-ad2c-8e2d043cf172",
+    "date": "2026-09-15",
+    "employeeName": "Karthik",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 5.7,
+    "hoursWorked": 5.2,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "781a3a31-76e9-442d-b7d4-7850d1aeb2f0",
+    "date": "2026-09-15",
+    "employeeName": "Anu",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 8.8,
+    "hoursWorked": 6.9,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "fc5e429e-a977-49da-a669-b8f3cd4f74fd",
+    "date": "2026-09-16",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 5,
+    "qualityScore": 10,
+    "hoursWorked": 7,
+    "pendingTask": ""
+  },
+  {
+    "id": "4ab35302-5570-446b-9569-daf8281990e0",
+    "date": "2026-09-16",
+    "employeeName": "Ravi",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 7.4,
+    "hoursWorked": 5.5,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "d599ee3e-00c0-4b8e-9c40-5c335361eaf8",
+    "date": "2026-09-16",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 8.1,
+    "hoursWorked": 5.4,
+    "pendingTask": ""
+  },
+  {
+    "id": "e7c89f3b-2134-47ba-9770-e5fcd4a5bc20",
+    "date": "2026-09-16",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 6.7,
+    "hoursWorked": 6.4,
+    "pendingTask": ""
+  },
+  {
+    "id": "f9489ae6-15d0-4b9d-812b-d7d1bb9448dc",
+    "date": "2026-09-16",
+    "employeeName": "Anu",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 8,
+    "hoursWorked": 5.7,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "57d2aab3-50c3-4941-8bf6-487fa8fd73c6",
+    "date": "2026-09-17",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 10,
+    "hoursWorked": 7.5,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "a189f46f-25cd-453e-9191-574511fdd7d9",
+    "date": "2026-09-17",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 7.1,
+    "hoursWorked": 5.7,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "995c842d-fd23-41ab-93a6-d611adb4fc09",
+    "date": "2026-09-17",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 4,
+    "qualityScore": 6.8,
+    "hoursWorked": 6,
+    "pendingTask": ""
+  },
+  {
+    "id": "facef063-4634-4621-b940-aad91e55b814",
+    "date": "2026-09-17",
+    "employeeName": "Karthik",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.7,
+    "hoursWorked": 5.8,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "2a275a50-ca1d-42a1-8920-e57c2d7a6d36",
+    "date": "2026-09-17",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 8.5,
+    "hoursWorked": 8.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "a2dcd14c-b9b2-4ec2-8510-799c67f0593c",
+    "date": "2026-09-18",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 6,
+    "qualityScore": 10,
+    "hoursWorked": 7.8,
+    "pendingTask": ""
+  },
+  {
+    "id": "91553c8a-cda2-42cc-aaf4-bb8b8b0cd496",
+    "date": "2026-09-18",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 7.1,
+    "hoursWorked": 5.7,
+    "pendingTask": ""
+  },
+  {
+    "id": "d70926ea-a688-445b-82a7-5f528bb1a6f6",
+    "date": "2026-09-18",
+    "employeeName": "Priya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 6.9,
+    "hoursWorked": 8.2,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "48dd4c98-e7ad-413a-b326-95a8c072c94c",
+    "date": "2026-09-18",
+    "employeeName": "Karthik",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.6,
+    "hoursWorked": 6.4,
+    "pendingTask": ""
+  },
+  {
+    "id": "a7e46a0a-7e39-4281-ba02-b60d7cb2944c",
+    "date": "2026-09-18",
+    "employeeName": "Anu",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 8.7,
+    "hoursWorked": 7.2,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "39125072-bb8f-4303-acc9-2a69fefe78fd",
+    "date": "2026-09-21",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 10,
+    "hoursWorked": 6.3,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "f54f711a-264b-4b68-8c59-c6a4084ccb43",
+    "date": "2026-09-21",
+    "employeeName": "Ravi",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 6.4,
+    "hoursWorked": 7.2,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "29e41f54-a9f6-46d1-b236-504f150b549d",
+    "date": "2026-09-21",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.6,
+    "hoursWorked": 7.7,
+    "pendingTask": ""
+  },
+  {
+    "id": "a3f85fd3-6829-445d-835c-811ff717a7e3",
+    "date": "2026-09-21",
+    "employeeName": "Karthik",
+    "tasksAssigned": 4,
+    "tasksCompleted": 2,
+    "qualityScore": 6.5,
+    "hoursWorked": 6.7,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "1ea12d1f-dbc0-4cfd-b09c-d876704be206",
+    "date": "2026-09-21",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 4,
+    "qualityScore": 8.1,
+    "hoursWorked": 5.1,
+    "pendingTask": ""
+  },
+  {
+    "id": "cd9164a8-9747-4376-b2a8-3a281d5e68c8",
+    "date": "2026-09-22",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 3,
+    "tasksCompleted": 3,
+    "qualityScore": 10,
+    "hoursWorked": 5.1,
+    "pendingTask": "Following up with design team"
+  },
+  {
+    "id": "5136474d-5cdf-4861-8dab-d64a3c5a7905",
+    "date": "2026-09-22",
+    "employeeName": "Ravi",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.3,
+    "hoursWorked": 5.7,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "6d50c06d-eb5a-4a43-8dce-0aedd4900875",
+    "date": "2026-09-22",
+    "employeeName": "Priya",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.5,
+    "hoursWorked": 6,
+    "pendingTask": "Blocked on API access"
+  },
+  {
+    "id": "5ea9cf7e-3c9c-4e7c-9c4a-1dae2cfbcd65",
+    "date": "2026-09-22",
+    "employeeName": "Karthik",
+    "tasksAssigned": 3,
+    "tasksCompleted": 2,
+    "qualityScore": 6.7,
+    "hoursWorked": 7.5,
+    "pendingTask": "Waiting on code review"
+  },
+  {
+    "id": "9baad808-ce15-4ac6-aefb-50f835dc1bd8",
+    "date": "2026-09-22",
+    "employeeName": "Anu",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 8.1,
+    "hoursWorked": 6.1,
+    "pendingTask": ""
+  },
+  {
+    "id": "c8e08303-dc85-4db2-8ab8-8fd61361611e",
+    "date": "2026-09-23",
+    "employeeName": "Akshaya",
+    "tasksAssigned": 6,
+    "tasksCompleted": 6,
+    "qualityScore": 10,
+    "hoursWorked": 7.6,
+    "pendingTask": ""
+  },
+  {
+    "id": "f100a664-f275-414c-9476-52bc9a3d7220",
+    "date": "2026-09-23",
+    "employeeName": "Ravi",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 6.7,
+    "hoursWorked": 6,
+    "pendingTask": ""
+  },
+  {
+    "id": "36e9ff12-2e75-46b1-b16c-befec7dd6284",
+    "date": "2026-09-23",
+    "employeeName": "Priya",
+    "tasksAssigned": 4,
+    "tasksCompleted": 3,
+    "qualityScore": 6.6,
+    "hoursWorked": 6.4,
+    "pendingTask": ""
+  },
+  {
+    "id": "d6b2508b-f7e6-478e-a9cc-75d3868c0f4e",
+    "date": "2026-09-23",
+    "employeeName": "Karthik",
+    "tasksAssigned": 5,
+    "tasksCompleted": 3,
+    "qualityScore": 6.7,
+    "hoursWorked": 8.2,
+    "pendingTask": ""
+  },
+  {
+    "id": "22728f16-6741-4206-8d89-a13365f993a8",
+    "date": "2026-09-23",
+    "employeeName": "Anu",
+    "tasksAssigned": 6,
+    "tasksCompleted": 5,
+    "qualityScore": 8.1,
+    "hoursWorked": 7.7,
+    "pendingTask": ""
+  }
+]
