@@ -1,12 +1,45 @@
 import { readAll, addRecord } from "../../../lib/store";
 import { withScores } from "../../../lib/aggregate";
 
-const REQUIRED_FIELDS = ["date", "employeeName", "tasksAssigned", "tasksCompleted", "qualityScore", "hoursWorked"];
+const REQUIRED_FIELDS = [
+  "date",
+  "employeeName",
+  "tasksCompleted",
+  "plannedHours",
+  "actualHours",
+  "qualityRating",
+  "selfAssessedProgress",
+  "selfRating",
+];
 
 function isAuthorized(request) {
   const required = process.env.TEAM_LEAD_PASSWORD;
   if (!required) return true; // no password configured — open for local dev convenience
   return request.headers.get("x-team-lead-password") === required;
+}
+
+function toRecordFields(body) {
+  return {
+    date: body.date,
+    employeeName: body.employeeName,
+    role: body.role || "",
+    email: body.email || "",
+    todayGoal: body.todayGoal || "",
+    taskDescription: body.taskDescription || "",
+    taskCategory: body.taskCategory || "Other",
+    tasksCompleted: Number(body.tasksCompleted),
+    taskOutcome: body.taskOutcome || "",
+    evidenceLink: body.evidenceLink || "",
+    plannedHours: Number(body.plannedHours),
+    actualHours: Number(body.actualHours),
+    qualityRating: Number(body.qualityRating),
+    selfAssessedProgress: Number(body.selfAssessedProgress),
+    challenges: body.challenges || "",
+    blockerSeverity: body.blockerSeverity || "None",
+    tomorrowTasks: body.tomorrowTasks || "",
+    tomorrowGoal: body.tomorrowGoal || "",
+    selfRating: Number(body.selfRating),
+  };
 }
 
 export async function GET() {
@@ -37,15 +70,7 @@ export async function POST(request) {
   }
 
   try {
-    const record = addRecord({
-      date: body.date,
-      employeeName: body.employeeName,
-      tasksAssigned: Number(body.tasksAssigned),
-      tasksCompleted: Number(body.tasksCompleted),
-      qualityScore: Number(body.qualityScore),
-      hoursWorked: Number(body.hoursWorked),
-      pendingTask: body.pendingTask || "",
-    });
+    const record = addRecord(toRecordFields(body));
     return Response.json({ ok: true, record });
   } catch (err) {
     return Response.json({ ok: false, error: err.message }, { status: 500 });

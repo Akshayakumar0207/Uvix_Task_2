@@ -1,33 +1,30 @@
 // Run once: node scripts/generateSampleData.js
-// Produces data/dailyReports.json with dummy data shaped like the Intern Daily
-// Report template: Date, Employee Name, Tasks Assigned, Tasks Completed,
-// Quality Score (1-10), Hours Worked. Replace with real data via
-// `npm run convert-excel` once you have the actual filled-in sheet.
+// Produces data/dailyReports.json matching the REAL Intern Daily Report
+// template's fields (Daily Report sheet, columns A-Q) — not a guessed schema.
+// See the "Instructions" sheet of the actual template for what each field means.
 
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
-const SAMPLE_PENDING_TASKS = [
-  "",
-  "",
-  "",
-  "Waiting on code review",
-  "Blocked on API access",
-  "Following up with design team",
-];
+const TASK_CATEGORIES = ["Development", "Testing", "Meeting", "Documentation", "Support", "Learning", "Other"];
+const BLOCKER_SEVERITIES = ["None", "None", "None", "Low", "Medium", "High"]; // weighted toward "None"
 
 const employees = [
-  { name: "Akshaya", baseQuality: 9.3, trend: 0.08 },   // strongest + still improving -> High Performer
-  { name: "Ravi", baseQuality: 7, trend: 0.0 },         // steady
-  { name: "Priya", baseQuality: 8.5, trend: -0.05 },    // slowly declining
-  { name: "Karthik", baseQuality: 5.5, trend: 0.03 },   // low but improving
-  { name: "Anu", baseQuality: 8, trend: 0.01 },         // solid, steady
+  { name: "Akshaya", role: "Full Stack Intern", email: "akshaya@example.com", baseQuality: 4.6, trend: 0.03 }, // strongest -> High Performer
+  { name: "Ravi", role: "Backend Intern", email: "ravi@example.com", baseQuality: 3.4, trend: 0.0 },            // steady
+  { name: "Priya", role: "Frontend Intern", email: "priya@example.com", baseQuality: 4.2, trend: -0.02 },       // slowly declining
+  { name: "Karthik", role: "QA Intern", email: "karthik@example.com", baseQuality: 2.7, trend: 0.015 },         // low but improving
+  { name: "Anu", role: "Full Stack Intern", email: "anu@example.com", baseQuality: 3.9, trend: 0.005 },         // solid, steady
 ];
 
 const DAYS = 30;
 const startDate = new Date();
 startDate.setDate(startDate.getDate() - DAYS);
+
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
 
 function randBetween(min, max) {
   return Math.round((min + Math.random() * (max - min)) * 10) / 10;
@@ -44,22 +41,37 @@ for (let d = 0; d < DAYS; d++) {
   const dateStr = date.toISOString().slice(0, 10);
 
   for (const emp of employees) {
-    const tasksAssigned = Math.round(randBetween(3, 6));
-    const qualityDrift = emp.trend * d + (Math.random() - 0.5) * 1.5;
-    const qualityScore = Math.min(10, Math.max(1, Math.round((emp.baseQuality + qualityDrift) * 10) / 10));
-    const completionRate = Math.min(1, Math.max(0.4, (qualityScore / 10) + (Math.random() - 0.5) * 0.2));
-    const tasksCompleted = Math.round(tasksAssigned * completionRate);
-    const hoursWorked = randBetween(5, 8.5);
+    const drift = emp.trend * d + (Math.random() - 0.5) * 0.6;
+    const qualityRating = Math.round(clamp(emp.baseQuality + drift, 1, 5));
+    const selfRating = Math.round(clamp(emp.baseQuality + drift + (Math.random() - 0.5) * 0.8, 1, 5));
+    const selfAssessedProgress = Math.round(clamp((qualityRating / 5) * 100 + (Math.random() - 0.5) * 15, 10, 100));
+    const tasksCompleted = Math.round(clamp(2 + drift, 0, 5));
+    const plannedHours = randBetween(4, 8);
+    const actualHours = clamp(plannedHours + (Math.random() - 0.5) * 2, 2, 10);
+    const blockerSeverity = BLOCKER_SEVERITIES[Math.floor(Math.random() * BLOCKER_SEVERITIES.length)];
+    const taskCategory = TASK_CATEGORIES[Math.floor(Math.random() * TASK_CATEGORIES.length)];
 
     records.push({
       id: crypto.randomUUID(),
-      date: dateStr,
       employeeName: emp.name,
-      tasksAssigned,
+      role: emp.role,
+      email: emp.email,
+      date: dateStr,
+      todayGoal: "",
+      taskDescription: "",
+      taskCategory,
       tasksCompleted,
-      qualityScore,
-      hoursWorked,
-      pendingTask: SAMPLE_PENDING_TASKS[Math.floor(Math.random() * SAMPLE_PENDING_TASKS.length)],
+      taskOutcome: "",
+      evidenceLink: "",
+      plannedHours: Math.round(plannedHours * 10) / 10,
+      actualHours: Math.round(actualHours * 10) / 10,
+      qualityRating,
+      selfAssessedProgress,
+      challenges: blockerSeverity === "None" ? "" : "Sample blocker for dummy data",
+      blockerSeverity,
+      tomorrowTasks: "",
+      tomorrowGoal: "",
+      selfRating,
     });
   }
 }

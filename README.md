@@ -1,9 +1,10 @@
 # Task 2 — Intern Performance Dashboard
 
 A Next.js + Chart.js dashboard showing daily/weekly/monthly performance trends
-from the Intern Daily Report sheet, plus a small ML layer: a linear-regression
-trend score per intern, and k-means clustering that buckets interns into
-performance tiers.
+from the **real** Intern Daily Report template, plus a small ML layer: a
+linear-regression trend score per intern, and k-means clustering that buckets
+interns into performance tiers. Also includes a Team Lead admin panel to add,
+edit, or delete any record.
 
 ## Folder structure
 
@@ -35,21 +36,39 @@ uvix-task2/
 │   └── dailyReports.json             # sample dummy data (30 days, 5 interns)
 ├── scripts/
 │   ├── generateSampleData.js         # regenerates the dummy dataset
-│   ├── convertExcelToJson.js         # converts the REAL Excel sheet -> data/dailyReports.json
-│   └── exportJsonToExcel.js          # exports data/dailyReports.json -> a real filled Excel file
+│   ├── convertExcelToJson.js         # imports a REAL filled template -> data/dailyReports.json
+│   └── exportJsonToExcel.js          # exports data/dailyReports.json -> real filled templates (one per employee)
 ├── package.json
 ├── .env.example
 ├── .gitignore
 └── README.md
 ```
 
+## The real template's shape (important)
+
+The actual `Intern_Daily_Report.xlsx` HR sent is **one file per employee**,
+not one shared sheet with an "Employee Name" column. On the `Daily Report`
+tab: the employee's Name/Role/Month-Year/Email sit in header cells (row 2),
+and their daily entries start at row 5 — one row per working day, columns:
+
+`Date | Day No. | Today's Goal | Task Description | Task Category | Tasks
+Completed | Task Outcome/Result | Evidence Link | Planned Hrs | Actual Hrs |
+Quality Rating (1-5) | Self-Assessed Progress % | Challenges/Blockers |
+Blocker Severity | Tomorrow's Tasks | Tomorrow's Goal | Employee Self-Rating (1-5)`
+
+Since each intern fills their own copy, `scripts/convertExcelToJson.js`
+**merges** each file's rows into `data/dailyReports.json` rather than
+overwriting it — run it once per employee's filled file, and everyone
+else's existing rows are kept.
+
 ## Team Lead admin panel
 
 At `/team-lead`, the Team Lead can add, edit, or delete any intern's daily
-report record (name, date, tasks assigned/completed, quality score, hours
-worked, and an optional free-text "pending task" note). Changes are picked
-up immediately on the main dashboard — the score, trend, and tier all
-recompute live from whatever's currently in `data/dailyReports.json`.
+report record — all 17 real fields (Today's Goal, Task Category dropdown,
+Tasks Completed, Planned/Actual Hrs, Quality Rating, Self-Assessed Progress %,
+Challenges/Blockers, Blocker Severity dropdown, tomorrow's plan, Self-Rating).
+Changes are picked up immediately on the main dashboard — score, trend, and
+tier all recompute live from whatever's currently in `data/dailyReports.json`.
 
 **Password protection:** set `TEAM_LEAD_PASSWORD` in your env to gate the
 add/edit/delete actions (the dashboard itself stays public/read-only either
@@ -65,29 +84,38 @@ run this locally to show the add/edit/delete flow working end-to-end; the
 honest next step for real production use would be swapping `lib/store.js`
 for an actual database while keeping the same function signatures.
 
-
 ## The ML layer, explained
 
-**Performance score (0-100)** — computed per daily report, not hidden in a model:
-- 40% task completion rate (`tasksCompleted / tasksAssigned`)
-- 40% quality score (`qualityScore` out of 10)
-- 20% hours worked (capped at a full 8-hour day)
+**Performance score (0-100)** — computed per daily report, from the real
+fields, not hidden in a model:
+- 35% Self-Assessed Progress % (already 0-100, as the intern reported it)
+- 25% Quality Rating (1-5, scaled to 0-100)
+- 20% Employee Self-Rating (1-5, scaled to 0-100)
+- 20% Hours efficiency (`actualHours` vs `plannedHours` — finishing at or
+  under planned time scores full credit; going over caps at 100 rather
+  than penalizing further, since "took longer" isn't always bad)
+- Then a flat penalty is subtracted based on that day's Blocker Severity:
+  None: 0, Low: 2, Medium: 5, High: 10, Critical: 20
 
-See `lib/aggregate.js` → `computeScore()`. Deliberately a transparent formula,
-not a black box, so it's easy to justify in review.
+See `lib/aggregate.js` → `computeScore()`. Deliberately transparent, not a
+black box. **Honest limitation worth saying out loud in review:** Quality
+Rating, Self-Assessed Progress, and Self-Rating are all self-reported by the
+same person on the same day — they're correlated by construction, not three
+independent signals. Hours efficiency is the only semi-objective input here.
+A manager sign-off field would make this meaningfully stronger.
 
 **Linear regression (trend)** — for each intern, fits a least-squares line
-(`lib/regression.js`) through their performance scores over time (day index on
-x, score on y). The slope tells you the direction:
+(`lib/regression.js`) through their performance scores over time (day index
+on x, score on y). The slope tells you the direction:
 - slope > 0.3 → "Improving"
 - slope < -0.3 → "Declining"
 - otherwise → "Steady"
 
 **K-means clustering (tiers)** — `lib/kmeans.js` is a from-scratch k-means
 (k=3, deterministic init — no randomness, so results are reproducible) run on
-each intern's `[avgScore, avgHours]`. The 3 clusters are then labeled by their
-centroid's average score: highest → "High Performer", middle → "Steady
-Performer", lowest → "Needs Support" (`lib/tiers.js`).
+each intern's `[avgScore, avgActualHours]`. The 3 clusters are then labeled
+by their centroid's average score: highest → "High Performer", middle →
+"Steady Performer", lowest → "Needs Support" (`lib/tiers.js`).
 
 ## Run it in VS Code
 
@@ -110,21 +138,32 @@ Performer", lowest → "Needs Support" (`lib/tiers.js`).
    npm run dev
    ```
    Open `http://localhost:3000` for the dashboard, or `http://localhost:3000/team-lead`
-   for the admin panel.
+   for the admin panel. It'll already show the included sample data (30 days,
+   5 interns).
 
-5. **Swap in the real Excel data** once you have the filled-in Intern Daily
-   Report sheet:
+5. **Import real filled templates**, once you (or actual interns) have filled
+   in copies of the real `Intern_Daily_Report.xlsx`:
    ```bash
-   npm run convert-excel -- /path/to/Intern_Daily_Report.xlsx
+   npm run convert-excel -- /path/to/Akshaya_Daily_Report.xlsx
+   npm run convert-excel -- /path/to/Ravi_Daily_Report.xlsx
    ```
-   This reads the first sheet, maps its columns (Date, Employee Name, Tasks
-   Assigned, Tasks Completed, Quality Score, Hours Worked — case-insensitive,
-   a few header variations supported), and overwrites `data/dailyReports.json`.
-   If it can't find a column, it tells you which headers it saw so you can
-   adjust the `columnMap` at the top of `scripts/convertExcelToJson.js`.
+   Run it once per employee's file — each run merges that employee's rows in,
+   keeping everyone else's. It reads the Name/Role/Email from the header
+   cells and the daily rows from row 5 onward, exactly matching the real
+   template's layout.
 
-6. Restart `npm run dev` (or just refresh — the API route reads the JSON file
-   fresh) to see the dashboard update with real data.
+6. **Or generate real-shaped dummy files yourself**, if you don't have actual
+   filled sheets yet:
+   ```bash
+   npm run export-excel
+   ```
+   Writes one filled `.xlsx` per employee (in the real template's exact
+   column layout) into `filled-templates/`, built from the same dummy data
+   already powering the dashboard — this is your "cloned the template and
+   filled it with dummy data" deliverable, per employee, as HR described.
+
+7. Restart `npm run dev` (or just refresh) to see the dashboard update after
+   an import.
 
 ## Deploy to Vercel
 
@@ -159,6 +198,10 @@ No cron, no OAuth needed here. One optional environment variable
 
 ## My process
 
+- Read the actual template's structure (per-employee header + daily rows,
+  17 real columns) before building the scoring/converter, rather than
+  guessing a generic schema — the two are meaningfully different, and the
+  first version of this project was built on the wrong assumption.
 - Chose to compute the performance score from the sheet's own fields with a
   stated formula, rather than feeding raw fields into a model — easier to
   defend and explain than an opaque prediction.
@@ -166,6 +209,6 @@ No cron, no OAuth needed here. One optional environment variable
   library, since the dataset and the ask are both small enough that a
   library would add a dependency without adding real capability.
 - Used AI assistance to scaffold the Next.js/Chart.js wiring and the Excel
-  column-mapping script, and to write this README.
-- Tested with generated dummy data first (`scripts/generateSampleData.js`) to
-  confirm trends and tiers looked sane, before wiring up the real-sheet path.
+  parsing script, and to write this README.
+- Tested the converter against an actually-filled copy of the real template
+  (not just generated dummy data) to confirm every column parses correctly.
